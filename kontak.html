@@ -33,6 +33,21 @@
       </form>
     </section>
   </main>
+  
+ <script>
+  function toggleMode() {
+    const body = document.body;
+    const btn = document.getElementById("modeButton");
+
+    body.classList.toggle("dark-mode");
+
+    if (body.classList.contains("dark-mode")) {
+      btn.textContent = "☀️ Mode Terang";
+    } else {
+      btn.textContent = "🌙 Mode Gelap";
+    }
+  }
+</script>
 
   <footer>
     <p>&copy; 2025 nvyoca</p>
