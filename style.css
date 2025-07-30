@@ -49,24 +49,30 @@ footer {
   padding: 15px;
 }
 body.dark-mode {
-  background-color: #2c2c2c;
+  background-color: #4b1c2f; /* pink gelap seperti maroon pink */
   color: #ffffff;
 }
 
 body.dark-mode header {
-  background-color: #444;
-  color: #ffffff;
+  background-color: #ad395e; /* pink tua untuk header */
+  color: white;
 }
 
 body.dark-mode nav ul li a {
-  color: #ffffff;
+  color: #ffeef5; /* pink muda pastel untuk link */
 }
 
 body.dark-mode .hero {
-  background-color: #3c3c3c;
+  background-color: #6a1b3f; /* pink keunguan gelap */
 }
 
 body.dark-mode footer {
-  background-color: #111;
-  color: #ffffff;
+  background-color: #8e244d; /* pink tua untuk footer */
+  color: white;
 }
+
+body.dark-mode button#modeButton {
+  background-color: #ba3f63;
+  color: white;
+}
+
