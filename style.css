@@ -119,3 +119,53 @@ input:checked + .slider {
 input:checked + .slider:before {
   transform: translateX(24px);
 }
+
+.mode-toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.mode-toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-ball {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  background: #ffd700; /* warna matahari default */
+  border-radius: 50%;
+  transition: 0.4s;
+  box-shadow: 0 0 5px #f9d71c;
+}
+
+/* ikon matahari: bisa pakai emoji langsung sebagai background */
+.toggle-ball::before {
+  content: "☀️";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+
+/* ketika toggle dicentang (mode gelap aktif) */
+.mode-toggle input:checked + .toggle-ball {
+  background: #444; /* warna gelap bola */
+  box-shadow: 0 0 8px #bbb;
+}
+
+/* ikon bulan muncul saat toggle aktif */
+.mode-toggle input:checked + .toggle-ball::before {
+  content: "🌙";
+  color: #eee;
+}
+
