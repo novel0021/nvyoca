@@ -168,4 +168,15 @@ input:checked + .slider:before {
   content: "🌙";
   color: #eee;
 }
+.mode-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+  cursor: pointer;
+  user-select: none;
+  z-index: 1000;
+}
 
