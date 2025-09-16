@@ -234,4 +234,28 @@ input:checked + .slider:before {
   font-size: 18px; /* LEBIH BESAR */
 }
 
+/* ✨ Efek Hover di Bola Toggle */
+.mode-toggle .toggle-ball {
+  transition: 0.4s, transform 0.2s ease; /* transisi halus */
+}
+
+.mode-toggle:hover .toggle-ball {
+  transform: scale(1.1) rotate(10deg); /* sedikit membesar + muter */
+  box-shadow: 0 0 12px #ff80ab; /* pink glow */
+}
+
+/* ✨ Efek Pas Diklik (active state) */
+.mode-toggle:active .toggle-ball {
+  transform: scale(0.95); /* agak mengecil pas ditekan */
+}
+
+/* ✨ Efek Transisi Background Body (halus pas ganti mode) */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header, .hero, footer {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
 
